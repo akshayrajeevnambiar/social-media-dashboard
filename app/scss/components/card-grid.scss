@@ -1,0 +1,23 @@
+@use "../util/" as *;
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-items: start;
+  gap: rem(23);
+
+  .card__count {
+    margin-bottom: 0;
+  }
+
+  .card__change,
+  .card__number {
+    align-self: end;
+  }
+
+  img,
+  .card__change {
+    justify-self: end;
+  }
+}

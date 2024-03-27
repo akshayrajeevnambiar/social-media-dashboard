@@ -1,0 +1,17 @@
+@use "../util/" as *;
+
+footer {
+  display: block;
+  background-color: var(--card-bg);
+  text-align: center;
+  text-transform: lowercase;
+  font-size: rem(10);
+  word-spacing: rem(2);
+  padding: rem(8) 0;
+
+  a {
+    text-decoration: underline;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+}

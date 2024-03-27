@@ -1,0 +1,2 @@
+"use strict";var radioButtons=document.querySelectorAll(".toggle__wrapper input");console.log(localStorage.getItem("colorMode")),radioButtons.forEach((function(t){t.addEventListener("click",(function(t){document.body.classList=t.target.value;var e;document.getElementById("toggle-text").innerText="".concat((e=t.target.value).charAt(0).toUpperCase()+e.slice(1)," Mode")}))}));
+//# sourceMappingURL=script.js.map
