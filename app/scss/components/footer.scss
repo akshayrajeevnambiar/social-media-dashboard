@@ -2,12 +2,19 @@
 
 footer {
   display: block;
+  width: 100%;
   background-color: var(--card-bg);
+  position: fixed;
+  bottom: 0;
   text-align: center;
   text-transform: lowercase;
-  font-size: rem(10);
+  font-size: rem(7);
   word-spacing: rem(2);
   padding: rem(8) 0;
+
+  @include breakpoint(medium) {
+    font-size: rem(12);
+  }
 
   a {
     text-decoration: underline;

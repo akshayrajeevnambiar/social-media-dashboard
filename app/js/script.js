@@ -7,13 +7,21 @@ const capitilize = (word) => word.charAt(0).toUpperCase() + word.slice(1);
 // theme vlaue stored within the local storage.
 const localTheme = localStorage.getItem("theme");
 
+// creating function to context switch between theme modes;
+const contextSwitcher = (id1, id2) => {
+  document.getElementById(id1).classList.remove("visually-hidden");
+  document.getElementById(id2).classList = "visually-hidden";
+};
+
 // Taking in the previous theme value from the local storage.
 if (localTheme) {
   document.body.classList = localTheme;
   document.getElementById(localTheme).checked = true;
-  document.getElementById("toggle-text").innerText = `${capitilize(
-    localTheme
-  )} Mode`;
+
+  // Switching the toggle text.
+  localTheme === "dark"
+    ? contextSwitcher("toggle-text-light", "toggle-text-dark")
+    : contextSwitcher("toggle-text-dark", "toggle-text-light");
 }
 
 radioButtons.forEach((button) => {
@@ -25,8 +33,8 @@ radioButtons.forEach((button) => {
     localStorage.setItem("theme", event.target.value);
 
     // Switching the toggle text.
-    document.getElementById("toggle-text").innerText = `${capitilize(
-      event.target.value
-    )} Mode`;
+    event.target.value === "dark"
+      ? contextSwitcher("toggle-text-light", "toggle-text-dark")
+      : contextSwitcher("toggle-text-dark", "toggle-text-light");
   });
 });

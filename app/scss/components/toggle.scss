@@ -6,27 +6,17 @@
   margin: 0;
   grid-template-columns: 1fr rem(48);
   gap: rem(4.8) rem(12);
+  width: 100%;
+  padding: rem(15) 0;
+  justify-items: start;
+
+  @include breakpoint(medium) {
+    width: auto;
+  }
 
   label {
     font-size: rem(14);
     align-self: center;
-
-    &[for="dark"] {
-      grid-column: 1 / 2;
-      justify-self: end;
-    }
-
-    &[for="system"] {
-      grid-column: 1 / 4;
-      grid-row: 2 / 3;
-      justify-self: center;
-      align-self: start;
-    }
-
-    &[for="light"] {
-      grid-column: 3 / 4;
-      justify-self: start;
-    }
   }
 
   &__wrapper {
