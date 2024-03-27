@@ -40,7 +40,18 @@ I followed a flexible workflow for building this project. Here's a suggested pro
 
 ### Deployment
 
-The project was deployed using cloudfare hosting solutions. I recommend using GitHub Pages, Vercel, or Cloudfare for free and efficient hosting.
+The project was deployed using cloudfare hosting solutions. I recommend using GitHub Pages, Vercel, or Cloudfare for free and efficient hosting. You can find the project here https://arn-socialmediadashboard.pages.dev/.
+
+### Screenshots
+Dark Theme:
+<br>
+<img width="893" alt="social-media-dashboard-dark-theme" src="https://github.com/akshayrajeevnambiar/social-media-dashboard/assets/144245055/3990f54c-2dd6-4106-b372-860dfa909532">
+
+Light Theme:
+<br>
+<img width="893" alt="social-media-dashboard-light-theme" src="https://github.com/akshayrajeevnambiar/social-media-dashboard/assets/144245055/32705eee-af08-429a-9cd5-7f748aff8dc3">
+
+
 
 ## Feedback and Sharing
 
